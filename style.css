@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+
+.container {
+    background: #feffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    transition: box-shadow 1s ease-in-out; /* Aplica transição ao box-shadow */
+    box-shadow: none; 
+}
+.container:hover {
+    box-shadow: 0 20px 20px rgba(69, 161, 74, 0.657);
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.empresa-list {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.empresa-item {
+    background: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow ease-in-out 1s;
+}
+
+.empresa-details {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.empresa-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.empresa-actions button.edit {
+    color: #ffa500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #34393aa4;
+}
+
+.empresa-actions button.delete {
+    color: #ee1e1e;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #34393aa4;
+}
+/* Efeito de hover na lista */
+.empresa-item:hover {
+    box-shadow: 0 20px 20px rgba(36, 61, 184, 0.657);
+}
